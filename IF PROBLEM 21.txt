@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main() {
+    char operation;
+    int a,b;
+    scanf("%d %c %d",&a,&operation,&b);
+
+    switch(operation) {
+        case '+':
+            printf("Result=%d",a+b);
+            break;
+        case '-':
+            printf("Result=%d",a-b);
+            break;
+        case '*':
+            printf("Result=%d",a*b);
+            break;
+        case '/':
+            printf("Result=%d",a/b);
+            break;
+        case '%':
+            printf("Result=%d",a%b);
+            break;
+        default:
+            printf("Invalid");
+
+    }
+    return 0;
+
+}

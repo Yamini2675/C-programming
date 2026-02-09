@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main() {
+    int attend_perc;
+    printf("Enter attend percentage:");
+    scanf("%d",&attend_perc);
+
+    if (attend_perc>=75) {
+        printf("Eligible for Exam");
+    }
+    else {
+        printf("Not Eligible for Exam");
+    }
+    return 0;
+}

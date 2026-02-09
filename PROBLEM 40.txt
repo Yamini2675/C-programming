@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main() {
+    int mark,income;
+    printf("Enter mark:");
+    scanf("%d",&mark);
+    printf("Enter Income:");
+    scanf("%d",&income);
+
+    if (mark>=85 && income<300000) {
+        printf("Eligible");
+    }
+    else {
+        printf("Not Eligible");
+    }
+    return 0;
+}

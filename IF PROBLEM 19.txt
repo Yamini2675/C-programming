@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    char N;
+    scanf("%c",&N);
+
+    if (N>='0' && N<='9') {
+        printf("Digit");
+    }
+    else {
+        printf("Not Digit");
+    }
+    return 0;
+}

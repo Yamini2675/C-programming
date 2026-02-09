@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main() {
+    int days;
+    printf("Enter Number of Days:");
+    scanf("%d",&days);
+
+    if (days<=7) {
+        printf("No Fine");
+    }
+    else {
+        printf("Fine Applied");
+    }
+}

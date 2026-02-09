@@ -1,0 +1,13 @@
+int main() {
+    int amt;
+    printf("Enter Amount:");
+    scanf("%d",&amt);
+
+    if (amt%100==0) {
+        printf("Valid Amount");
+    }
+    else {
+        printf("Invalid Amount");
+    }
+    return 0;
+}

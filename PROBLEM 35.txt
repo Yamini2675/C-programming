@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main() {
+    int acc_lock;
+    printf("Enter Number of Attempts:");
+    scanf("%d",&acc_lock);
+
+    if (acc_lock<=3&&acc_lock>0) {
+        printf("Login Allowed");
+    }
+    else {
+        printf("Account Locked");
+    }
+    return 0;
+}

@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main() {
+    int mark;
+    printf("Enter mark:");
+    scanf("%d",&mark);
+
+    if (mark>=85 && mark<=100) {
+        printf("Distinction");
+    }
+    else if (mark<85&&mark>=40) {
+        printf("Pass");
+    }
+    else if (mark<40 && mark>0) {
+        printf("Fail");
+    }
+    else {
+        printf("Invalid Mark");
+    }
+    return 0;
+}

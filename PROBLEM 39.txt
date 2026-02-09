@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int acc_bal;
+    printf("Enter Account Balance:");
+    scanf("%d",&acc_bal);
+
+    if (acc_bal>=1000) {
+        printf("Sufficient Balance");
+    }
+    else {
+        printf("Low Balance");
+    }
+    return 0;
+}

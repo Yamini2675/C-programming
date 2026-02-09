@@ -1,0 +1,42 @@
+#include<stdio.h>
+
+int main() {
+    int N,a,b;
+    printf("Menu\n");
+    printf("1.Addition\n");
+    printf("2.Subtraction\n");
+    printf("3.Multiplication\n");
+    printf("4.Division\n");
+    printf("Enter operation:");
+    scanf("%d",&N);
+
+    switch(N) {
+        case 1:
+            printf("1.Addition\n");
+            printf("Enter two values:");
+            scanf("%d %d",&a,&b);
+            printf("Sum=%d",a+b);
+            break;
+        case 2:
+            printf("2.Subtraction\n");
+            printf("Enter two values:");
+            scanf("%d %d",&a,&b);
+            printf("Difference=%d",a-b);
+            break;
+        case 3:
+            printf("3.Multiplication\n");
+            printf("Enter two values:");
+            scanf("%d %d",&a,&b);
+            printf("Product=%d",a*b);
+            break;
+        case 4:
+            printf("4.Division\n");
+            printf("Enter two values:");
+            scanf("%d %d",&a,&b);
+            printf("Division=%d",a/b);
+            break;
+        default:
+            printf("Invalid Operation");
+    }
+    return 0;
+}
