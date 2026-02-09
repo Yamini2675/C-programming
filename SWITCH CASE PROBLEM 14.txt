@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int main() {
+    int vec_cat,vec_age;
+    printf("Enter Vehicle Category:");
+    scanf("%d",&vec_cat);
+    printf("Enter Vehicle Age:");
+    scanf("%d",&vec_age);
+
+    switch (vec_cat) {
+        case 1:
+            if (vec_age<=5) {
+                printf("1500");
+            }
+            else {
+                printf("2500");
+            }
+            break;
+        case 2:
+            if (vec_age<=5) {
+                printf("4000");
+            }
+            else {
+                printf("6000");
+            }
+            break;
+        default:
+            printf("Invalid Choice");
+    }
+    return 0;
+}

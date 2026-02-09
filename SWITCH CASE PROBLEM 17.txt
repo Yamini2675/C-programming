@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main() {
+    int vec_type,par_hour,total;
+    printf("Enter Vehicle Type:");
+    scanf("%d",&vec_type);
+    printf("Enter Parking Hours:");
+    scanf("%d",&par_hour);
+
+    switch (vec_type) {
+        case 1:
+            total=10*par_hour;
+            printf("Parking Fee:%d",total);
+            break;
+        case 2:
+            total=20*par_hour;
+            printf("Parking Fee:%d",total);
+            break;
+        default:
+            total=20*par_hour;
+            printf("Parking Fee:%d",total);
+    }
+    return 0;
+}

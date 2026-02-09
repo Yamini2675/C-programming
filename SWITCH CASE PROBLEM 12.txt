@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+int main() {
+    int vec_type,trips,total;
+    printf("Enter Vehicle Type:");
+    scanf("%d",&vec_type);
+    printf("Number of Trips:");
+    scanf("%d",&trips);
+
+    switch (vec_type) {
+        case 1:
+            if (trips==1) {
+                printf("100");
+            }
+            else if (trips>=2&&trips<=10) {
+                printf("800(Monthly Pass)");
+            }
+            else {
+                printf("800(Monthly Pass)");
+            }
+            break;
+        case 2:
+            if (trips==1) {
+                printf("240");
+            }
+            else {
+                total=trips*240;
+                printf("%d",total);
+            }
+            break;
+        default:
+            printf("Invalid Vehicle Type");
+    }
+    return 0;
+
+}

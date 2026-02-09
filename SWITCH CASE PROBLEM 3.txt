@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int main() {
+    int acc_type,bal,wd;
+    printf("Enter Account Type:");
+    scanf("%d",&acc_type);
+    printf("Enter Balance:");
+    scanf("%d",&bal);
+    printf("Enter Withdraw Amount:");
+    scanf("%d",&wd);
+
+    switch (acc_type) {
+        case 1:
+            if (bal>=wd) {
+                printf("Transaction Successfull");
+            }
+            else {
+                printf("Transaction rejected");
+            }
+            break;
+        case 2:
+            if (wd<=5000) {
+                printf("Transaction successfull");
+            }
+            else {
+                printf("Limit Exceeded");
+            }
+            break;
+    }
+    return 0;
+}

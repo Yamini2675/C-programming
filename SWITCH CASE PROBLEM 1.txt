@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+int main() {
+    int con_type,units,bill;
+    printf("Enter ConnectionType:");
+    scanf("%d",&con_type);
+
+    switch (con_type) {
+        case 1:
+            printf("Enter units:");
+            scanf("%d",&units);
+            if(units<=100) {
+                bill=units*3;
+                printf("Bill Amount = %d",bill);
+            }
+            else {
+                bill=(100*3)+(units-100)*5;
+                bill=bill-80;
+                printf("Bill Amount = %d",bill);
+            }
+            break;
+        case 2:
+            printf("Enter units:");
+            scanf("%d",&units);
+            if (units<=100) {
+                bill=units*7;
+                printf("Bill Amount = %d",bill);
+            }
+            else {
+                bill=(100*7)+(units-100)*10;
+                printf("Bill Amount = %d",bill);
+            }
+            break;
+        default:
+            printf("Invalid ConnectionType");
+    }
+    return 0;
+}
