@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main() {
+    int n,k,j;
+    scanf("%d %d",&n,&k);
+    j=n^(1<<k);
+    printf("%d",j);
+    return 0;
+}

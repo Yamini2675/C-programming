@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main() {
+    int A,B,max;
+    scanf("%d %d",&A,&B);
+    max=(A>B)?A:B;
+    printf("%d",max);
+    return 0;
+}
