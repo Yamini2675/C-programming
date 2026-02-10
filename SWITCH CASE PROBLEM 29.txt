@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main() {
+    int vec_type,dist,fare;
+    scanf("%d %d",&vec_type,&dist);
+
+    switch (vec_type) {
+        case 1:
+            fare=dist*10;
+            printf("Fare:%d",fare);
+            break;
+        case 2:
+            fare=dist*15;
+            printf("Fare:%d",fare);
+            break;
+        case 3:
+            fare=dist*20;
+            printf("Fare:%d",fare);
+            break;
+        default:
+            printf("Invalid");
+    }
+    return 0;
+}
+

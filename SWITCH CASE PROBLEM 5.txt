@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+int main() {
+    int plan,pay_mode,amount;
+    scanf("%d %d",&plan,&pay_mode);
+
+    switch (plan) {
+        case 1:
+            amount=199;
+            switch (pay_mode) {
+                case 11:
+                case 12:
+                    amount=amount-20;
+                    break;
+                case 13:
+                    printf("No Cashback");
+                    break;
+                default:
+                    printf("PaymentMode");
+                    return 0;
+            }
+            break;
+        case 2:
+            amount=399;
+            switch (pay_mode) {
+                case 11:
+                case 12:
+                    amount=amount-20;
+                    break;
+                case 13:
+                    printf("No Cashback");
+                    break;
+                default:
+                    printf("PaymentMode");
+                    return 0;
+            }
+            break;
+        default:
+            printf("Invalid Plan");
+    }
+    printf("Pay:%d",amount);
+    return 0;
+}

@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main() {
+    int S_type,S_time,price;
+    scanf("%d %d",&S_type,&S_time);
+
+    switch (S_type) {
+        case 1:
+            price=150;
+            if (S_time>=18) {
+                price+=50;
+                printf("Ticket Price:%d",price);
+            }
+            else {
+                printf("Ticket Price:%d",price);
+            }
+            break;
+        case 2:
+            price=250;
+            if (S_time>=18) {
+                price+=50;
+                printf("Ticket Price:%d",price);
+            }
+            else {
+                printf("Ticket Price:%d",price);
+            }
+            break;
+        default:
+            printf("Invalid Seat Type");
+    }
+    return 0;
+}

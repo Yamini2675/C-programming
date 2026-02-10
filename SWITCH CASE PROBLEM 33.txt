@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main() {
+    int book_type,days_late,total;
+    scanf("%d %d",&book_type,&days_late);
+
+    switch (book_type) {
+        case 1:
+            total=days_late*2;
+            printf("Late Fee:%d",total);
+            break;
+        case 2:
+            total=days_late*5;
+            printf("Late Fee:%d",total);
+            break;
+        default:
+            printf("Invalid");
+    }
+    return 0;
+}

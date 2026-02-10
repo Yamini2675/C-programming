@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main() {
+    int con_type,units;
+    scanf("%d %d",&con_type,&units);
+
+    switch (con_type) {
+        case 1:
+            if (units<=30) {
+                units=units*5;
+                printf("Bill:%d",units);
+            }
+            else {
+                units=30*5+(units-30)*8;
+                printf("Bill:%d",units);
+            }
+            break;
+        case 2:
+            units=units*10;
+            printf("Bill:%d",units);
+            break;
+        default:
+            printf("Invalid Connection Type");
+    }
+    return 0;
+}

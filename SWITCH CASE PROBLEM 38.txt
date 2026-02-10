@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main() {
+    int dr_type;
+    scanf("%d",&dr_type);
+
+    switch (dr_type) {
+        case 1:
+            printf("Consultation Fee:500");
+            break;
+        case 2:
+            printf("Consultation Fee:1200");
+            break;
+        default:
+            printf("Invalid Doctor Type");
+    }
+    return 0;
+}

@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main() {
+ int cour_type;
+ scanf("%d",&cour_type);
+
+ switch (cour_type) {
+  case 1:
+   printf("Certifiate Fee:0");
+   break;
+  case 2:
+   printf("Certified Fee:500");
+   break;
+  default:
+   printf("Invalid Class Type");
+ }
+ return 0;
+}

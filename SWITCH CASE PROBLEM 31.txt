@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main() {
+    int dur_type;
+    scanf("%d",&dur_type);
+
+    switch (dur_type) {
+        case 1:
+            printf("Membership Fee:1500");
+            break;
+        case 2:
+            printf("Membership Fee:4000");
+            break;
+        case 3:
+            printf("Membership Fee:7000");
+            break;
+        default:
+            printf("Invalid Duration Type");
+    }
+    return 0;
+}
+
+

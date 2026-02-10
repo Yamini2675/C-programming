@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main() {
+    int mode;
+    char stu_cat;
+    scanf("%d %c",&mode,&stu_cat);
+    switch (mode) {
+        case 1:
+            if (stu_cat=='R') {
+                printf("5000");
+            }
+            else if(stu_cat=='S'){
+                    printf("3000");
+            }
+            else {
+                printf("Invalid Student Category");
+            }
+            break;
+        case 2:
+            if(stu_cat=='R') {
+                printf("9000");
+            }
+            else if(stu_cat=='S'){
+                    printf("7000");
+                    break;
+            }
+            break;
+        default:
+            printf("Invalid Course Mode");
+    }
+    return 0;
+}
