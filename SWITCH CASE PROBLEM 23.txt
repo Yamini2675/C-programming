@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main() {
+    int cus_type,bill_amt,total;
+    scanf("%d %d",&cus_type,&bill_amt);
+
+    switch (cus_type) {
+        case 1:
+            total=bill_amt-(bill_amt*5/100);
+            printf("Pay:%d",total);
+            break;
+        case 2:
+            total=bill_amt-(bill_amt*0.15);
+            printf("Pay:%d",total);
+            break;
+        default:
+            printf("Invalid Customer Type");
+    }
+    return 0;
+}

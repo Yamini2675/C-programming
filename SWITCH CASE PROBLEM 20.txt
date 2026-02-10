@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main() {
+    int user_role,log_time;
+    scanf("%d %d",&user_role,&log_time);
+
+    switch (user_role) {
+        case 1:
+            printf("Full Access");
+            break;
+        case 2:
+            if (log_time>=9&&log_time<=20) {
+                printf("Limited Access");
+            }
+            else {
+                printf("Access Denied");
+            }
+            break;
+        default:
+            printf("Invalid Role");
+    }
+    return 0;
+}

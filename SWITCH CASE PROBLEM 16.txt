@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main() {
+    int flight_class,ext_bag,amount;
+    scanf("%d %d",&flight_class,&ext_bag);
+
+    switch (flight_class) {
+        case 1:
+            amount=ext_bag*300;
+            printf("Extra Baggage Charge:%d",amount);
+            break;
+        case 2:
+            if (ext_bag<=3) {
+                printf("Free");
+            }
+            else {
+                amount=ext_bag-3;
+                amount=amount*300;
+                printf("Extra Baggage Charge:%d",amount);
+            }
+            break;
+        default:
+            printf("Invalid Flight Class");
+    }
+    return 0;
+}
