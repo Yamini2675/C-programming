@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main() {
+    int b,n,h,sum,total;
+    scanf("%d %d ",&b,&n);
+
+    for (int i=1;i<=n;i++) {
+        scanf("%d",&h);
+        sum=sum+h;
+    }
+    total=b-sum;
+    printf("Remaining Battery:%d%%",total);
+    return 0;
+}
