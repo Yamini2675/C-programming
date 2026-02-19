@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main() {
+    int cap,h,n,total=0;
+    int i=1;
+    int limit,count=0;
+
+    scanf("%d %d",&cap,&h);
+    limit=cap*0.9;
+
+    while (i<=h) {
+        scanf("%d",&n);
+        total=total+n;
+        if (total>limit) {
+            count++;
+        }
+        i++;
+
+    }
+    printf("Final Occupied Beds:%d\n",total);
+    printf("Critical Hours:%d",count);
+    return 0;
+}
