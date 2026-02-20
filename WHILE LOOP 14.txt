@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main() {
+    int cash,n,amt,rem;
+    int i=1,count=0,total=0;
+
+    scanf("%d %d",&cash,&n);
+
+    while (i<=n) {
+        scanf("%d",&amt);
+        total=total+amt;
+        if (total<=cash) {
+            count++;
+        }
+        i++;
+    }
+    printf("Successful Withdrawals:%d\n",count);
+
+    if (total<cash) {
+        rem=cash-total;
+        printf("Remaining Withdrawals:%d",rem);
+    }
+    else {
+        rem=total-cash;
+        printf("Remaining Deposits:%d",rem);
+    }
+
+    return 0;
+}
