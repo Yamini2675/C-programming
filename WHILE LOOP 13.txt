@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main() {
+    int data,n,d_usage,overused=0;
+    int i=0,exhaustedday=0;
+
+    scanf("%d %d",&data,&n);
+
+    while (i<n) {
+        scanf("%d",&d_usage);
+        i++;
+        data=data-d_usage;
+        if (data<=0) {
+            exhaustedday=i;
+            overused=-data;
+            break;
+        }
+    }
+        if (exhaustedday==0) {
+            printf("Exhausted day: Not Exhausted\n");
+            printf("Overused Data: 0\n");
+        }
+        else {
+            printf("Exhausted Day:%d\n",exhaustedday);
+            printf("Overused Data: %d\n",overused);
+        }
+
+    return 0;
+}
