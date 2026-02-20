@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main() {
+    int n,pow_usage,count=0;
+    int i=1,max=0;
+
+    scanf("%d",&n);
+
+    while (i<=n) {
+        scanf("%d",&pow_usage);
+        if (pow_usage>max) {
+            max=pow_usage;
+        }
+        if (pow_usage>5) {
+            count++;
+        }
+        i++;
+    }
+    printf("Max Usage:%d\n",max);
+    printf("Surge Hours:%d",count);
+
+    return 0;
+}
