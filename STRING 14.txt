@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main() {
+    char str[100];
+    fgets(str,sizeof(str),stdin);
+    int str2;
+    for (int i=0;str[i]!='\0';i++) {
+        str2=str[i];
+        printf("%c",str2);
+    }
+    return 0;
+}
