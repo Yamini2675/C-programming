@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main() {
+    char str[100];
+    fgets(str,sizeof(str),stdin);
+    char str2[100];
+    int *p,*t;
+    p=str;
+    t=str2;
+    while(*p!='\0') {
+        *t=*p;
+        p++;
+        t++;
+    }
+    *t='\0';
+    printf("%s",str2);
+
+    return 0;
+}
