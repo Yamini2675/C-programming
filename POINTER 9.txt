@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main() {
+    int n,t;
+    int ind=-1;
+    int *p;
+    int arr[n];
+    scanf("%d",&n);
+
+    for (int i=0;i<n;i++) {
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d",&t);
+
+    p=arr;
+
+    for (int i=0;i<n;i++) {
+        if (*(p+i)==t) {
+            ind=i+1;
+            break;
+        }
+    }
+    printf("%d\n",ind);
+    return 0;
+
+}
