@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main() {
+    char str[100];
+    int pal=1,len=0;
+    scanf("%s",&str);
+    char *p,*t;
+    p=str;
+    while (*(p+len)!='\0') {
+        len++;
+    }
+    t=p+len-1;
+
+    while (p<t) {
+        if (*p!=*t) {
+            pal=0;
+            break;
+        }
+        p++;
+        t--;
+    }
+    if (pal) {
+        printf("Yes\n");
+    }
+    else {
+        printf("No\n");
+    }
+    return 0;
+}
